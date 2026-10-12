@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F6FA"
+    android:padding="16dp">
+
+    <!-- App Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Secure P2P File Manager"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#2C3E50"
+        android:gravity="center"
+        android:paddingBottom="16dp"/>
+
+    <!-- Connection Card / Box -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:padding="16dp"
+        android:elevation="4dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Connect to Another Device"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:paddingBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etConnectionCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter 6-Digit Connection Code"
+            android:inputType="number"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnConnect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Connect Now"
+            android:backgroundTint="#2980B9"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <!-- Quick Navigation Buttons -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:alignmentMode="alignMargins">
+
+        <Button
+            android:id="@+id/btnFolders"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:text="My Folders &amp; Files"
+            android:backgroundTint="#27AE60"
+            android:textColor="#FFFFFF"
+            android:layout_margin="4dp"/>
+
+        <Button
+            android:id="@+id/btnPasswordManager"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:text="Password Manager"
+            android:backgroundTint="#E67E22"
+            android:textColor="#FFFFFF"
+            android:layout_margin="4dp"/>
+    </GridLayout>
+
+    <!-- Space filler -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- AdMob Banner Placeholder -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="[ AdMob Banner Ad Space ]"
+        android:gravity="center"
+        android:background="#E0E0E0"
+        android:textColor="#7F8C8D"
+        android:textSize="12sp"/>
+
+</LinearLayout>
